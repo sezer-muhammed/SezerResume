@@ -1,18 +1,21 @@
-\documentclass[11pt,a4paper]{moderncv}
+\documentclass[10pt,a4paper]{moderncv}
 
 % ModernCV themes
 \moderncvstyle{classic}
 \moderncvcolor{blue}
-
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{geometry}
 \usepackage{fontawesome5}
 
+
 \newgeometry{left=1.75cm,right=1.75cm,top=1.5cm,bottom=1.5cm}
 
+\newcommand{\customsubsection}[1]{\vspace{2mm}\textcolor{color1}{\textbf{\large{#1}}}\vspace{1mm}}
+
+
 % Personal data
-\firstname{Muhammed I.}
+\firstname{Muhammed}
 \familyname{Sezer}
 \title{Resume}
 \phone[mobile]{+90-530-613-61-84}
@@ -31,38 +34,35 @@
 
 % Education
 \section{Education}
-\cventry{2015--2018}{Bachelor of Science}{University of XYZ}{City}{First Class Honors}{Major in Computer Science}
+\cventry{2017--2023}{Bachelor of Science}{Middle East Technical University}{Ankara}{}{Major in Electrical \& Electronics Engineering}
 
 % Experience
 \section{Experience}
-\subsection{Full-time Positions}
+\customsubsection{Full-time Positions}
+
 \cventry{2022 - }{Established Orion Robotics}{Robotics Start-up}{}{}{
     \begin{itemize}
         \item Received support from the TÜBİTAK 1512 BİGG program.
     \end{itemize}
 }
-\subsection{Research}
-\cventry{}{Research collaboration}{ROMER}{2 years}{}{
+\customsubsection{Research}
+
+\cventry{2020-2022}{Contributed to Swarm Robotic Research}{ROMER}{}{Swarm Robotics}{
     \begin{itemize}
         \item Worked under the guidance of Prof. Ali Emre Turgut.
-        \item Focused on swarm robotics.
     \end{itemize}
 }
-\cventry{}{Developed the Mobile Robot Fener}{}{3 years}{}{
+\cventry{2019-2022}{Developed a Mobile Robot}{}{}{Mobile Robotics}{
     \begin{itemize}
         \item Worked under the supervision of Prof. Klaus Werner Schmidt.
     \end{itemize}
 }
-\cventry{2019 - 2022}{Founded project Fener}{}{}{}{
-    \begin{itemize}
-        \item Received multiple grants and won competitions.
-    \end{itemize}
-}
 
-\subsection{Internships}
-\cventry{2022 Summer}{Worked on rehabilitation robots}{TED University}{}{}{
+\customsubsection{Internships}
+
+\cventry{2022,Summer}{Contributed to Rehabilitation Robotics Research}{TED University}{}{Rehabilitation Robotics}{
     \begin{itemize}
-        \item Collaborated with Prof. Kutluk Arıkan.
+        \item Worked under the guidance of Prof. Kutluk Arıkan.
     \end{itemize}
 }
 
@@ -70,22 +70,57 @@
 
 % Skills
 \section{Skills}
-\cvitem{Programming Languages}{C++ Python}
-\cvitem{Frameworks and Libraries}{ROS2, PyTorch}
+\customsubsection{Programming Languages}
+
+\cvitem{}{C++, C, Python}
+
+
+
+\customsubsection{Frameworks and Libraries}
+
+\cvitem{}{
+  \begingroup
+  \setlength{\tabcolsep}{10pt}
+  \begin{tabular}{lllll}
+    \href{https://www.ros.org}{ROS2} & \href{http://gazebosim.org}{Gazebo} & \href{https://developer.nvidia.com/isaac-sim}{IsaacSim} & \href{https://ardupilot.org}{ArduPilot} & \href{https://px4.io}{PX4} \\
+    \href{https://opencv.org}{OpenCV} & \href{https://numpy.org}{NumPy} & \href{https://pandas.pydata.org}{pandas} & \href{https://scipy.org}{SciPy} & \href{https://scikit-learn.org}{scikit-learn} \\
+    \href{https://pytorch.org}{PyTorch} & \href{https://www.tensorflow.org}{TensorFlow} & \href{https://seaborn.pydata.org}{seaborn} & \href{https://matplotlib.org}{matplotlib} & \href{https://plotly.com}{plotly} \\
+    \href{https://jupyter.org}{Jupyter} & \href{https://www.autodesk.com/products/fusion-360/overview}{Fusion360} & & & \
+\end{tabular}
+\endgroup
+}
+
+\customsubsection{Soft Skills}
+
+\cvitem{}{Problem Solving, Planning, Risk Management, Crisis Management, Teaching, Stress Management, Avoiding Complication}
+
 
 % Awards
 \section{Awards}
-\cvlistitem{Teknofest 2022: Secured second place in the "Transportation with Artificial Intelligence" competition}
+\cvlistitem{Atılım University: \textbf{\#1} in \textbf{entrepreneurship} competition}
+\cvlistitem{Teknofest 2022: \textbf{\#2} in \textbf{Transportation in Artificial Intelligence} competition}
+\cvlistitem{Tubitak 2242: \textbf{Mansion} in \textbf{University Students Research} competition}
 
 % Languages
 \section{Languages}
-\cvitem{English}{Professional}
 \cvitem{Turkish}{Native}
+\cvitem{English}{Professional}
 \cvitem{Russian}{Beginner}
 
 
 % Interests
 \section{Interests}
-\cvitem{}{Photography, Poetry, Creating content}
+\cvitem{Art-Based}{Photography, Poetry, Creating content}
+\cvitem{Nerd-Based}{Documenting, Creating report}
+\cvitem{}{text}
+
+\section{Digital Assets}
+
+\customsubsection{\href{https://scholar.google.com/citations?user=I7NehSUAAAAJ&hl=tr}{Google Scholar Profile}}
+
+\customsubsection{\href{https://www.youtube.com/@sevval.d/videos}{Second YouTube Channel}}
+
+\cvitem{}{}
+
 
 \end{document}
