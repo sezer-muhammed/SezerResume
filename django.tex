@@ -1,0 +1,89 @@
+\documentclass[10pt,a4paper]{moderncv}
+
+% ModernCV themes
+\moderncvstyle{classic}
+\moderncvcolor{blue}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{geometry}
+\usepackage{fontawesome5}
+
+\newgeometry{left=1.75cm,right=1.75cm,top=1.5cm,bottom=1.5cm}
+
+\newcommand{\customsubsection}[1]{\vspace{2mm}\textcolor{color1}{\textbf{\large{#1}}}\vspace{1mm}}
+
+% Personal data
+\firstname{Muhammed}
+\familyname{Sezer}
+\title{Python and Web Developer}
+\phone[mobile]{+90-530-613-61-84}
+\address{METU, Ankara, Turkey}
+\email{muhammedsezer12@gmail.com}
+\social[linkedin]{muhammed-sezer-160428208}
+\extrainfo{
+    \faYoutube \hspace{0.002cm} \href{https://www.youtube.com/@IMSezer/videos}{IMSezer} | \faYoutube \hspace{0.002cm} \href{https://www.youtube.com/@SezerSevval}{SezerSevval}
+}
+
+\social[github]{sezer-muhammed}
+\photo[64pt][0.4pt]{images/1666710045206.jpeg}
+
+\begin{document}
+
+\makecvtitle
+
+% Education
+\section{Education}
+\cventry{2017--2023}{Bachelor of Science in Electrical \& Electronics Engineering with focus on Python and Django}{Middle East Technical University}{Ankara}{}{}
+
+% Experience
+\section{Experience}
+\customsubsection{Python and Web Development Positions}
+
+\cventry{2022 - }{Established Orion Robotics}{Robotics Start-up}{}{}{
+    \begin{itemize}
+        \item Designed and implemented the company website using Django and HTML.
+        \item Automated processes and workflows using Python.
+        \item Received support from the TÜBİTAK 1512 BİGG program.
+    \end{itemize}
+}
+
+\cventry{2019-2022}{Developed a Mobile Robot with Web Interface}{}{}{}{
+    \begin{itemize}
+        \item Built the robot control interface using HTML.
+        \item Implemented control and sensor algorithms in Python.
+        \item Worked under the supervision of Prof. Klaus Werner Schmidt.
+    \end{itemize}
+}
+
+% Skills
+\section{Skills}
+
+\customsubsection{Programming and Web Development Languages}
+
+\cvitem{}{
+  \begingroup
+  \setlength{\tabcolsep}{12pt}
+  \begin{tabular}{lllll}
+    Python $\star$ $\star$ $\star$ & Django $\star$ $\star$ $\star$ & Html $\star$ $\star$ $\star$ & CSS & JavaScript \\
+  \end{tabular}
+  \endgroup
+}
+
+\customsubsection{Frameworks and Libraries}
+
+\cvitem{}{
+  \begingroup
+  \setlength{\tabcolsep}{10pt}
+  \begin{tabular}{lllll}
+    Django $\star$ $\star$ $\star$ & Bootstrap & jQuery & AngularJS & ReactJS \\
+    OpenCV $\star$ & NumPy $\star$  & scikit-learn & PyTorch $\star$ & Flask \\
+  \end{tabular}
+  \endgroup
+}
+
+\section{Languages}
+\cvitem{Turkish}{Native}
+\cvitem{English}{Professional}
+\cvitem{Russian}{Beginner}
+
+\end{document}
